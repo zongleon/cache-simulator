@@ -1,0 +1,109 @@
+-----------------------------------------------------------
+Cache size comparison
+-----------------------------------------------------------
+
+Cache: 2^6 bytes per cacheline
+Cache: 2^11 sets
+
+2^1 cachelines per set:
+ 4963136 misses |   10000000 accesses | 0.496314 miss ratio
+Time elapsed: 143 ms
+
+2^2 cachelines per set:
+ 4926272 misses |   10000000 accesses | 0.492627 miss ratio
+Time elapsed: 181 ms
+
+2^3 cachelines per set:
+ 4852544 misses |   10000000 accesses | 0.485254 miss ratio
+Time elapsed: 278 ms
+
+2^4 cachelines per set:
+ 4705088 misses |   10000000 accesses | 0.470509 miss ratio
+Time elapsed: 469 ms
+
+2^5 cachelines per set:
+ 4410176 misses |   10000000 accesses | 0.441018 miss ratio
+Time elapsed: 873 ms
+
+2^6 cachelines per set:
+ 3820352 misses |   10000000 accesses | 0.382035 miss ratio
+Time elapsed: 1592 ms
+
+2^7 cachelines per set:
+ 2640704 misses |   10000000 accesses | 0.264070 miss ratio
+Time elapsed: 2675 ms
+
+2^8 cachelines per set:
+  500000 misses |   10000000 accesses | 0.050000 miss ratio
+Time elapsed: 3749 ms
+
+-----------------------------------------------------------
+Associativity (number of sets) comparison)
+-----------------------------------------------------------
+
+Cache: 2^6 bytes per cacheline
+Cache: 2^3 cachlines per set
+
+2^1 sets:
+ 4999856 misses |   10000000 accesses | 0.499986 miss ratio
+Time elapsed: 309 ms
+
+2^2 sets:
+ 4999712 misses |   10000000 accesses | 0.499971 miss ratio
+Time elapsed: 305 ms
+
+2^3 sets:
+ 4999424 misses |   10000000 accesses | 0.499942 miss ratio
+Time elapsed: 287 ms
+
+2^4 sets:
+ 4998848 misses |   10000000 accesses | 0.499885 miss ratio
+Time elapsed: 282 ms
+
+2^5 sets:
+ 4997696 misses |   10000000 accesses | 0.499770 miss ratio
+Time elapsed: 277 ms
+
+2^6 sets:
+ 4995392 misses |   10000000 accesses | 0.499539 miss ratio
+Time elapsed: 280 ms
+
+2^7 sets:
+ 4990784 misses |   10000000 accesses | 0.499078 miss ratio
+Time elapsed: 274 ms
+
+2^8 sets:
+ 4981568 misses |   10000000 accesses | 0.498157 miss ratio
+Time elapsed: 277 ms
+
+2^9 sets:
+ 4963136 misses |   10000000 accesses | 0.496314 miss ratio
+Time elapsed: 277 ms
+
+2^10 sets:
+ 4926272 misses |   10000000 accesses | 0.492627 miss ratio
+Time elapsed: 278 ms
+
+2^11 sets:
+ 4852544 misses |   10000000 accesses | 0.485254 miss ratio
+Time elapsed: 274 ms
+
+2^12 sets:
+ 4705088 misses |   10000000 accesses | 0.470509 miss ratio
+Time elapsed: 274 ms
+
+2^13 sets:
+ 4410176 misses |   10000000 accesses | 0.441018 miss ratio
+Time elapsed: 272 ms
+
+2^14 sets:
+ 3820352 misses |   10000000 accesses | 0.382035 miss ratio
+Time elapsed: 252 ms
+
+2^15 sets:
+ 2640704 misses |   10000000 accesses | 0.264070 miss ratio
+Time elapsed: 232 ms
+
+2^16 sets:
+  500000 misses |   10000000 accesses | 0.050000 miss ratio
+Time elapsed: 184 ms
