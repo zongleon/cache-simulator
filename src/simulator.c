@@ -1,19 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-
-// Assumes little endian
-void printBits(size_t const size, void const *const ptr) {
-  unsigned char *b = (unsigned char *)ptr;
-  unsigned char byte;
-  int i, j;
-
-  for (i = size - 1; i >= 0; i--) {
-    for (j = 7; j >= 0; j--) {
-      byte = (b[i] >> j) & 1;
-      printf("%u", byte);
-    }
-  }
-}
 
 // the cache line
 struct CacheLine {
@@ -42,15 +27,6 @@ struct SACache {
 };
 
 struct SACache *cache;
-
-void printSet(int s_n, struct CacheSet *set) {
-  for (int i = 0; i < cache->lines_per_set; i++) {
-    struct CacheLine *line = &set->set[i];
-    printf("Set %d | Block addr: ", s_n);
-    printBits(sizeof(long long), &line->addr);
-    printf("| Age: %d\n", line->age);
-  }
-}
 
 // initialize simulation
 void sim_start(int B, int S, int W) {
